@@ -9,21 +9,27 @@ import {
   Buttons
 } from "./Styled";
 
-export const Section = ({ title, backgroungImg, order, inventory }) => {
+export const Section = ({
+  title,
+  desc,
+  link,
+  backgroungImg,
+  order,
+  inventory
+}) => {
   return (
     <Wrap backgroungImg={backgroungImg}>
       <TextContainer>
         <h1>{title}</h1>
         <p>
-          Order Online for <a href="#">Touchless Delivery</a>
+          {desc}
+          {link}
         </p>
       </TextContainer>
       <Buttons>
         <ButtonsContainer>
-          <PrimaryButton order={order}>Custom Order</PrimaryButton>
-          <SecundaryButton inventory={inventory}>
-            Existing Inventory
-          </SecundaryButton>
+          <PrimaryButton>{order}</PrimaryButton>
+          {inventory && <SecundaryButton>{inventory}</SecundaryButton>}
         </ButtonsContainer>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>

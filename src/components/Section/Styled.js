@@ -19,12 +19,12 @@ export const TextContainer = styled.div`
 `;
 
 export const ButtonsContainer = styled.div`
-  display: grid;
-  grid-gap: 16px;
+  display: flex;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: space-between;
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
 
@@ -35,9 +35,12 @@ export const PrimaryButton = styled.button`
   color: var(--white);
   cursor: pointer;
   border-radius: 32px;
+  justify-content: center;
+  align-items: center;
   opacity: 0.85;
   text-transform: uppercase;
   font-size: 0.8rem;
+  margin: 8px;
   &:hover {
     opacity: 1;
   }

@@ -1,15 +1,20 @@
 :root {
   --primary: rgba(23, 26, 32, 0.8);
+  --secundary: rgb(57, 60, 65);
   --white: white;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  color: #393c41;
+  color: var(--secundary);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +29,13 @@ button {
 a {
   color: var(--primary);
   text-underline-offset: 0.15em;
+}
+
+ul li > a,
+li > a,
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 h1 {

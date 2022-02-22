@@ -56,6 +56,7 @@ export const DownArrow = styled.img`
   height: 40px;
   animation: animateDown infinite 1.5s;
   padding-bottom: 10px;
+  overflow: hidden;
 `;
 
 export const Buttons = styled.div`

@@ -8,6 +8,7 @@ import {
   DownArrow,
   Buttons
 } from "./Styled";
+import Fade from "react-reveal/Fade";
 
 export const Section = ({
   title,
@@ -19,18 +20,22 @@ export const Section = ({
 }) => {
   return (
     <Wrap backgroungImg={backgroungImg}>
-      <TextContainer>
-        <h1>{title}</h1>
-        <p>
-          {desc}
-          {link}
-        </p>
-      </TextContainer>
+      <Fade bottom>
+        <TextContainer>
+          <h1>{title}</h1>
+          <p>
+            {desc}
+            {link}
+          </p>
+        </TextContainer>
+      </Fade>
       <Buttons>
-        <ButtonsContainer>
-          <PrimaryButton>{order}</PrimaryButton>
-          {inventory && <SecundaryButton>{inventory}</SecundaryButton>}
-        </ButtonsContainer>
+        <Fade bottom>
+          <ButtonsContainer>
+            <PrimaryButton>{order}</PrimaryButton>
+            {inventory && <SecundaryButton>{inventory}</SecundaryButton>}
+          </ButtonsContainer>
+        </Fade>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
     </Wrap>

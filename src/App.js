@@ -5,7 +5,9 @@ import { Home } from "./components/Home/Home";
 
 export const App = () => {
   return (
-    // <Header />
-    <Home />
+    <>
+      <Header />
+      <Home />
+    </>
   );
 };

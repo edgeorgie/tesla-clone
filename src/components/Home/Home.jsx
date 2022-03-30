@@ -12,6 +12,7 @@ export const Home = () => {
         backgroungImg="model-s.jpg"
         order="Custom Order"
         inventory="Existing Inventory"
+        id="model-s"
       />
       <Section
         title="Model 3"
@@ -20,6 +21,7 @@ export const Home = () => {
         backgroungImg="model-3.jpg"
         order="Custom Order"
         inventory="Existing Inventory"
+        id="model-3"
       />
       <Section
         title="Model X"
@@ -28,6 +30,7 @@ export const Home = () => {
         backgroungImg="model-x.jpg"
         order="Custom Order"
         inventory="Existing Inventory"
+        id="model-x"
       />
       <Section
         title="Model Y"
@@ -36,6 +39,7 @@ export const Home = () => {
         backgroungImg="model-y.jpg"
         order="Custom Order"
         inventory="Existing Inventory"
+        id="model-y"
       />
       <Section
         title="Solar Panels"
@@ -43,6 +47,7 @@ export const Home = () => {
         backgroungImg="solar-panel.jpg"
         order="Order Now"
         inventory="Learn More"
+        id="solar-panels"
       />
       <Section
         title="Solar Roof"
@@ -50,11 +55,13 @@ export const Home = () => {
         backgroungImg="solar-roof.jpg"
         order="Order Now"
         inventory="Learn More"
+        id="solar-roof"
       />
       <Section
         title="Accessories"
         backgroungImg="accessories.jpg"
         order="Shop Now"
+        id='accessories'
       />
     </Container>
   );

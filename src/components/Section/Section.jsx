@@ -16,10 +16,11 @@ export const Section = ({
   link,
   backgroungImg,
   order,
-  inventory
+  inventory,
+  id
 }) => {
   return (
-    <Wrap backgroungImg={backgroungImg}>
+    <Wrap backgroungImg={backgroungImg} id={id}>
       <Fade bottom>
         <TextContainer>
           <h1>{title}</h1>

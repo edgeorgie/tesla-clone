@@ -47,7 +47,7 @@ export const FullMenu = styled.div`
   top: 0px;
   right: 0px;
   background: var(--white);
-  width: 25%;
+  width: 300px;
   height: 100vh;
   align-items: flex-start;
   justify-content: center;

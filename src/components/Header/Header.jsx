@@ -56,14 +56,24 @@ export const Header = () => {
           <span></span>
         </div>
         <div>
-          {cars &&
-            cars.map((car, index) => (
-              <li>
-                <a key={index} href="/">
-                  {car}
-                </a>
-              </li>
-            ))}
+          <li>
+            <a href="#model-s">Model S</a>
+          </li>
+          <li>
+            <a href="#model-3">Model 3</a>
+          </li>
+          <li>
+            <a href="#model-x">Model X</a>
+          </li>
+          <li>
+            <a href="#model-y">Model Y</a>
+          </li>
+          <li>
+            <a href="#solar-roof">Solar Roof</a>
+          </li>
+          <li>
+            <a href="#solar-panels">Solar Panels</a>
+          </li>
           <li>
             <a href="/">Existing Inventory</a>
           </li>
